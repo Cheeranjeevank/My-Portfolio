@@ -1,4 +1,4 @@
-# Premium Red & Black Glassmorphism Portfolio
+# My Portfolio
 
 A state-of-the-art scrollytelling web portfolio designed and developed for **Cheeranjeevan K** (Data Analyst and AI & Data Science student). This website combines a premium obsidian black and glowing crimson red aesthetic with a narrative, performance-optimized scrolling experience.
 
