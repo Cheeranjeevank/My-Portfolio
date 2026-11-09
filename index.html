@@ -1,517 +1,860 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cheeranjeevan.K | Portfolio - Data Analyst & AI Enthusiast</title>
-  <meta name="description" content="Portfolio of Cheeranjeevan.K, a B.Tech Artificial Intelligence and Data Science student & Data Analyst Intern specializing in machine learning, business intelligence, and AI systems.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=1.2">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheeranjeevan K — AI &amp; Data Science Portfolio</title>
+    <meta name="description" content="Portfolio of Cheeranjeevan K, AI & Data Science B.Tech student and Data Analyst Intern. Projects in Swarm AI, NLP, and Data Analytics.">
+    <!-- Google Fonts: Space Grotesk & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Liquid Backdrop Elements -->
-  <div class="liquid-bg" aria-hidden="true">
-    <div class="blob blob-purple"></div>
-    <div class="blob blob-blue"></div>
-    <div class="blob blob-teal"></div>
-  </div>
-  <div class="frosted-glass-overlay" aria-hidden="true"></div>
-
-  <!-- Top Navigation Bar -->
-  <header class="top-bar">
-    <div class="brand">
-      <span class="brand-name">Cheeranjeevan.K</span>
-      <span class="brand-divider">/</span>
-      <span class="brand-title">Data Analyst</span>
-    </div>
-    <div class="education-badge">
-      <span class="badge-dot"></span>
-      3rd Year B.Tech AI &amp; DS
-    </div>
-  </header>
-
-  <!-- Left Sidebar Navigation -->
-  <nav class="sidebar" aria-label="Dashboard navigation">
-    <div class="sidebar-logo" aria-hidden="true">
-      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-      </svg>
-    </div>
-    <ul class="sidebar-menu">
-      <li>
-        <button class="menu-item" id="btn-certifications" aria-label="View Certifications" title="Certifications">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-            <polyline points="22 4 12 14.01 9 11.01"/>
-          </svg>
-          <span class="menu-text">Certifications</span>
-        </button>
-      </li>
-      <li>
-        <button class="menu-item" id="btn-projects" aria-label="View Projects" title="Projects">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
-          </svg>
-          <span class="menu-text">Projects</span>
-        </button>
-      </li>
-      <li>
-        <button class="menu-item" id="btn-links" aria-label="View Contact and Account Links" title="Account Links">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-            <rect x="2" y="9" width="4" height="12"/>
-            <circle cx="4" cy="4" r="2"/>
-          </svg>
-          <span class="menu-text">Social Links</span>
-        </button>
-      </li>
-    </ul>
-    <div class="sidebar-footer">
-      <span class="scroll-indicator-dot"></span>
-    </div>
-  </nav>
-
-  <!-- Scrollytelling Scroll Tracker -->
-  <!-- These sections act as scroll triggers to drive the animated views below -->
-  <div id="scroll-tracker" class="scroll-tracker">
-    <section id="trigger-scene1" class="tracker-section" aria-label="Scroll Scene 1: Hero Image"></section>
-    <section id="trigger-scene2" class="tracker-section" aria-label="Scroll Scene 2: Personal Details"></section>
-  </div>
-
-  <!-- Foreground Interactive Scrollytelling Canvas -->
-  <main id="scrolly-content" class="scrolly-canvas">
-    
-    <!-- Photo Section (Always visible, changes state as we scroll) -->
-    <div class="photo-container-wrapper">
-      <div class="photo-container" id="scrolly-photo">
-        <div class="photo-liquid-border"></div>
-        <div class="photo-frame">
-          <img src="assets/1.png" alt="Cheeranjeevan.K Professional Avatar" class="profile-img">
-        </div>
-      </div>
+    <!-- Dynamic interactive background -->
+    <div class="bg-glow-container" id="bgGlowContainer">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="cursor-glow" id="cursorGlow"></div>
     </div>
 
-    <!-- Animated Details Section (Fades/Animates in on scroll phase 2) -->
-    <div class="details-container-wrapper" id="scrolly-details">
-      <div class="details-card glass-panel">
-        <span class="intro-tag">Hello, I'm</span>
-        <h1 class="hero-name">Cheeranjeevan.K</h1>
-        <h2 class="hero-role">AI &amp; Data Science Student</h2>
-        <div class="stats-grid">
-          <div class="stat-item">
-            <span class="stat-val">8.5</span>
-            <span class="stat-label">CGPA (B.Tech)</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-val">9+</span>
-            <span class="stat-label">Projects Built</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-val">5+</span>
-            <span class="stat-label">Certifications</span>
-          </div>
+    <!-- Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-text">CHEERANJEEVAN</span><span class="dot">.</span><span class="logo-sub">K</span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#leadership" class="nav-link">Leadership</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </div>
-        <button class="scroll-tip-btn" id="scroll-to-about-btn" aria-label="Scroll to About Me Section">
-          <span>Keep scrolling to learn more</span> <span class="arrow">↓</span>
-        </button>
-      </div>
+    </header>
+
+    <main class="portfolio-container">
+        <!-- 1. Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content reveal">
+                <div class="badge-row">
+                    <span class="badge pulse-badge">
+                        <span class="pulse-dot"></span>
+                        Available for Internships
+                    </span>
+                    <span class="badge secondary">B.Tech AI &amp; Data Science</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Transforming Data into <br>
+                    <span class="highlight">Intelligent Solutions</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Data Analyst Intern specializing in Artificial Intelligence, machine learning models, database management, and full-stack web solutions.
+                </p>
+                
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn primary">
+                        <span>View My Work</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#contact" class="btn secondary">
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+
+                <!-- Recruiter Quick-Facts Bar -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">8.5</span>
+                        <span class="stat-label">Current CGPA</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Internships</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">11</span>
+                        <span class="stat-label">Featured Projects</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image-container reveal">
+                <div class="hero-image-wrapper">
+                    <img src="assets/1.png" alt="Cheeranjeevan K" class="hero-image">
+                    <div class="hero-card-glow"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. About Section -->
+        <section id="about" class="section about-section">
+            <div class="section-header reveal">
+                <div class="section-label">Who I Am</div>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card glass-panel reveal">
+                    <div class="panel-header">
+                        <div class="panel-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                        </div>
+                        <h3>Professional Profile</h3>
+                    </div>
+                    <p>
+                        Motivated B.Tech student specializing in Artificial Intelligence and Data Science with strong skills in Python programming, data analytics, machine learning, and web development. Experienced in data preprocessing, exploratory data analysis (EDA), and AI model development through academic projects and internships.
+                    </p>
+                    <p>
+                        Deeply interested in data analytics and business analytics, with a passion for transforming data into meaningful insights that support strategic decision-making and business growth. Passionate about building data-driven solutions and intelligent systems, with hands-on experience in WordPress development, database management, and software development tools.
+                    </p>
+                    <p>
+                        Seeking internship opportunities to apply technical knowledge, build intelligent data-driven systems, and contribute to innovative technology projects.
+                    </p>
+                </div>
+
+                <div class="about-details-col">
+                    <div class="education-card glass-panel reveal">
+                        <div class="panel-header">
+                            <div class="panel-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                            </div>
+                            <h3>Education</h3>
+                        </div>
+                        <div class="edu-item">
+                            <span class="edu-year">2024 – Present</span>
+                            <h4>B.Tech in Artificial Intelligence &amp; Data Science</h4>
+                            <p class="edu-school">KPR Institute of Engineering and Technology, Coimbatore</p>
+                            <div class="edu-meta-badge">
+                                <span>Current CGPA: <strong>8.5</strong></span>
+                                <span class="meta-dot"></span>
+                                <span>2nd Year</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-two-cols">
+                        <div class="lang-card glass-panel reveal">
+                            <div class="panel-header">
+                                <div class="panel-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                                </div>
+                                <h3>Languages</h3>
+                            </div>
+                            <ul class="clean-list">
+                                <li><span class="flag">🇬🇧</span> English</li>
+                                <li><span class="flag">🇮🇳</span> Tamil</li>
+                                <li><span class="flag">🇮🇳</span> Hindi</li>
+                            </ul>
+                        </div>
+
+                        <div class="interests-card glass-panel reveal">
+                            <div class="panel-header">
+                                <div class="panel-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                </div>
+                                <h3>Interests</h3>
+                            </div>
+                            <ul class="clean-list">
+                                <li><span class="bullet-icon">📊</span> Data Analytics</li>
+                                <li><span class="bullet-icon">⚡</span> Data Processing</li>
+                                <li><span class="bullet-icon">🧠</span> Model Building</li>
+                                <li><span class="bullet-icon">💻</span> Software Development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="section-header reveal">
+                <div class="section-label">What I Do</div>
+                <h2 class="section-title">Expertise Skills</h2>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-card glass-panel reveal">
+                    <div class="skill-icon-box">⚡</div>
+                    <h3>Programming</h3>
+                    <p>Core object-oriented and data processing languages for algorithmic problem-solving and software engineering.</p>
+                    <div class="skill-tags">
+                        <span>Python</span><span>Java</span><span>C++</span>
+                    </div>
+                </div>
+
+                <!-- AI & Machine Learning -->
+                <div class="skill-card glass-panel reveal">
+                    <div class="skill-icon-box">🧠</div>
+                    <h3>Machine Learning &amp; AI</h3>
+                    <p>Natural Language Processing (NLP), Generative AI foundations, Computer Vision, Swarm AI, on-device model tuning.</p>
+                    <div class="skill-tags">
+                        <span>NLP</span><span>Generative AI</span><span>Computer Vision</span><span>TensorFlow Lite</span><span>ML Kit</span>
+                    </div>
+                </div>
+
+                <!-- Data Analytics -->
+                <div class="skill-card glass-panel reveal">
+                    <div class="skill-icon-box">📊</div>
+                    <h3>Data Analytics</h3>
+                    <p>Interactive dashboard design, predictive forecasting, Exploratory Data Analysis (EDA), KPI monitoring, and storytelling.</p>
+                    <div class="skill-tags">
+                        <span>Power BI</span><span>Tableau</span><span>BigQuery</span><span>Google Sheets</span><span>MS Excel</span><span>R</span>
+                    </div>
+                </div>
+
+                <!-- Data Handling -->
+                <div class="skill-card glass-panel reveal">
+                    <div class="skill-icon-box">💾</div>
+                    <h3>Data Handling &amp; Databases</h3>
+                    <p>Database modeling, query optimization, data cleansing, integration pipelines, relational database management.</p>
+                    <div class="skill-tags">
+                        <span>PostgreSQL</span><span>SQL</span><span>MySQL</span><span>Sequelize ORM</span>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="skill-card glass-panel reveal">
+                    <div class="skill-icon-box">💻</div>
+                    <h3>Web Development</h3>
+                    <p>Full-stack custom applications, RESTful API design, interactive UI, content management systems, and e-commerce.</p>
+                    <div class="skill-tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>WordPress</span><span>Node.js</span><span>Express.js</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Experience & Certifications -->
+        <section id="experience" class="section experience-section">
+            <div class="section-header reveal">
+                <div class="section-label">My Journey</div>
+                <h2 class="section-title">Experience &amp; Credentials</h2>
+            </div>
+            
+            <div class="exp-cert-grid">
+                <div class="timeline-col">
+                    <div class="sub-heading-wrap reveal">
+                        <div class="sub-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                        </div>
+                        <h3>Internship Experience</h3>
+                    </div>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item glass-panel reveal">
+                            <div class="timeline-top">
+                                <span class="timeline-date">06/2026 – 07/2026</span>
+                                <span class="timeline-badge">Internship</span>
+                            </div>
+                            <h4>Data Analyst Intern</h4>
+                            <p class="timeline-company">MedTourEasy | New Delhi, India</p>
+                            <ul>
+                                <li>Successfully completed the Google Data Analytics Professional Certificate, mastering data cleaning, analysis, visualization, SQL, spreadsheets, R programming, and data-driven decision-making across 9 courses.</li>
+                                <li>Applied analytical methodologies to solve real-world business challenges and generate actionable insights from structured and unstructured datasets.</li>
+                                <li>Delivered live data analytics projects involving collection, preprocessing, transformation, visualization, and stakeholder reporting.</li>
+                                <li>Leveraged SQL, Microsoft Excel, Google Sheets, Tableau, BigQuery, and R to analyze large datasets and support business decisions.</li>
+                                <li>Designed and implemented interactive dashboards and performance reports to monitor key metrics and enhance strategic planning.</li>
+                                <li>Conducted Exploratory Data Analysis (EDA) to identify trends, patterns, and opportunities through data storytelling.</li>
+                                <li>Gained hands-on experience across the end-to-end data analytics lifecycle from data acquisition to strategic insight generation.</li>
+                            </ul>
+                        </div>
+
+                        <div class="timeline-item glass-panel reveal">
+                            <div class="timeline-top">
+                                <span class="timeline-date">12/2025 – 01/2026</span>
+                                <span class="timeline-badge">Internship</span>
+                            </div>
+                            <h4>Web Dev &amp; Data Analyst Intern</h4>
+                            <p class="timeline-company">Maylancer Techios | Coimbatore, India</p>
+                            <ul>
+                                <li>Developed and managed an e-commerce website using WordPress, including website structure, product listings, and inventory management.</li>
+                                <li>Maintained product catalogs, pricing, stock details, and digital content to ensure smooth website operations.</li>
+                                <li>Contributed to “The Coimbatorian (NRI Hub)”, a platform designed to help Non-Resident Indians (NRIs) explore places and services in Coimbatore.</li>
+                                <li>Collected, cleaned, processed, and analyzed datasets from multiple sources to ensure data accuracy and usability.</li>
+                                <li>Assisted in organizing and integrating structured data into the platform to enhance user experience and accessibility.</li>
+                                <li>Gained hands-on experience in WordPress, web technologies, data preprocessing, and digital content management.</li>
+                                <li>Strengthened problem-solving, teamwork, and analytical skills through real-world project execution and collaboration.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certs-col">
+                    <div class="sub-heading-wrap reveal">
+                        <div class="sub-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                        </div>
+                        <h3>Certifications (6)</h3>
+                    </div>
+
+                    <div class="certs-list">
+                        <div class="cert-item glass-panel reveal">
+                            <div class="cert-year-tag">2026</div>
+                            <h4>Google Data Analytics Professional Certificate</h4>
+                            <p class="cert-issuer">Google Career Certificates (Completed Jun 2026)</p>
+                        </div>
+
+                        <div class="cert-item glass-panel reveal">
+                            <div class="cert-year-tag">2025</div>
+                            <h4>Generative AI Foundations: IT Integration with Generative AI</h4>
+                            <p class="cert-issuer">Infosys Springboard</p>
+                        </div>
+
+                        <div class="cert-item glass-panel reveal">
+                            <div class="cert-year-tag">2025</div>
+                            <h4>Generative AI Foundations</h4>
+                            <p class="cert-issuer">Infosys Springboard</p>
+                        </div>
+
+                        <div class="cert-item glass-panel reveal">
+                            <div class="cert-year-tag">2025</div>
+                            <h4>Responsible and Safe AI</h4>
+                            <p class="cert-issuer">NPTEL</p>
+                        </div>
+
+                        <div class="cert-item glass-panel reveal">
+                            <div class="cert-year-tag">2024</div>
+                            <h4>Data Science Foundations</h4>
+                            <p class="cert-issuer">Great Learning</p>
+                        </div>
+
+                        <div class="cert-item glass-panel reveal">
+                            <div class="cert-year-tag">2024</div>
+                            <h4>Basics of Data Analytics</h4>
+                            <p class="cert-issuer">Great Learning</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Positions of Responsibility (Leadership) Section -->
+        <section id="leadership" class="section leadership-section">
+            <div class="section-header reveal">
+                <div class="section-label">Leadership &amp; Community</div>
+                <h2 class="section-title">Positions of Responsibility</h2>
+            </div>
+
+            <div class="leadership-grid">
+                <div class="leadership-card glass-panel reveal">
+                    <div class="leadership-header">
+                        <div class="leadership-icon-box">🏛️</div>
+                        <div class="leadership-titles">
+                            <div class="timeline-top">
+                                <span class="timeline-date">06/2026 – Present</span>
+                                <span class="timeline-badge" style="color: #60a5fa; border-color: rgba(96, 165, 250, 0.3); background: rgba(96, 165, 250, 0.1);">Executive Board</span>
+                            </div>
+                            <h3>Joint Secretary</h3>
+                            <p class="leadership-org">KPRIET ACM STUDENT CHAPTER | Coimbatore, India</p>
+                        </div>
+                    </div>
+                    <p class="leadership-desc">
+                        Supporting the planning and execution of technical events, workshops, hackathons, and student engagement initiatives while promoting technical learning, professional development, and collaboration among students.
+                    </p>
+                    <div class="leadership-tags">
+                        <span>ACM Student Chapter</span><span>Hackathons</span><span>Workshops</span><span>Event Planning</span><span>Peer Mentorship</span>
+                    </div>
+                </div>
+
+                <div class="leadership-card glass-panel reveal">
+                    <div class="leadership-header">
+                        <div class="leadership-icon-box">📢</div>
+                        <div class="leadership-titles">
+                            <div class="timeline-top">
+                                <span class="timeline-date">06/2025 – 06/2026</span>
+                                <span class="timeline-badge">Completed</span>
+                            </div>
+                            <h3>Marketing Chair</h3>
+                            <p class="leadership-org">KPRIET | Coimbatore, India</p>
+                        </div>
+                    </div>
+                    <p class="leadership-desc">
+                        Organized campus events, designed promotional outreach campaigns, drove student participation across multiple academic and technical forums, and strengthened communication and leadership skills.
+                    </p>
+                    <div class="leadership-tags">
+                        <span>Event Marketing</span><span>Outreach</span><span>Leadership</span><span>Team Communication</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="section-header reveal">
+                <div class="section-label">What I've Built</div>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">
+                    Explore 11 projects spanning Swarm Intelligence, time-series forecasting, full-stack applications, NLP, and interactive Tableau business intelligence dashboards.
+                </p>
+            </div>
+
+            <!-- Project Category Filter Pills -->
+            <div class="project-filters reveal">
+                <button type="button" class="filter-btn active" data-filter="all">All (11)</button>
+                <button type="button" class="filter-btn" data-filter="ai">AI &amp; Machine Learning (4)</button>
+                <button type="button" class="filter-btn" data-filter="data">Data Analytics &amp; BI (4)</button>
+                <button type="button" class="filter-btn" data-filter="web">Web &amp; Full-Stack (3)</button>
+            </div>
+            
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Project 1: Competitor War Room AI -->
+                <div class="project-card glass-panel reveal" data-category="ai">
+                    <div class="project-header">
+                        <div class="project-top-meta">
+                            <span class="project-date">06/2026 – Present</span>
+                            <span class="status-indicator live">Swarm Intelligence</span>
+                        </div>
+                        <h3>Competitor War Room AI</h3>
+                        <p class="project-tagline">Autonomous Swarm Intelligence (MarketWatch)</p>
+                    </div>
+                    <p class="project-desc">
+                        AI-powered competitive intelligence platform that acts as an automated COO for e-commerce brands, SMBs, and creators by monitoring market trends, competitor activities, customer sentiment, and sales performance.
+                    </p>
+                    <ul class="project-bullets">
+                        <li>Built a Swarm Intelligence architecture consisting of 4 interconnected AI agents: Marketing Agent, Product Agent, Strategy Agent, and Sales Agent for automated decision-making.</li>
+                        <li>Developed a Flutter mobile application and web dashboard for real-time business telemetry and strategic recommendations.</li>
+                        <li>Implemented TensorFlow Lite-based on-device sentiment analysis and defect classification from customer reviews with low-latency inference.</li>
+                        <li>Integrated Google ML Kit OCR for extracting insights from return slips, warranty cards, and handwritten feedback.</li>
+                        <li>Engineered Marketing, Strategy, and Sales Intelligence modules for CPC estimation, RoAS monitoring, demand forecasting, and risk alerts.</li>
+                        <li>Designed RESTful APIs and agent orchestration services using Dart Frog for edge-AI deployment.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Flutter</span><span>TensorFlow Lite</span><span>OCR</span><span>Dart Frog</span><span>Swarm AI</span><span>Python</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: Sub-Threshold Sentinel -->
+                <div class="project-card glass-panel reveal" data-category="ai">
+                    <div class="project-header">
+                        <div class="project-top-meta">
+                            <span class="project-date">Ongoing</span>
+                            <span class="status-indicator live">Research &amp; ML</span>
+                        </div>
+                        <h3>The 'Sub-Threshold' Sentinel</h3>
+                        <p class="project-tagline">Passive Behavioral Entropy &amp; Crisis Prediction</p>
+                    </div>
+                    <p class="project-desc">
+                        Behavioral monitoring system to detect early signs of mental health relapse by analyzing digital biomarkers such as keystroke dynamics and gait symmetry.
+                    </p>
+                    <ul class="project-bullets">
+                        <li>Developed a self-supervised contrastive learning model to identify deviations from normal behavioral patterns.</li>
+                        <li>Implemented time-series analysis and signal processing using Temporal Fusion Transformers (TFT), MNE-Python, and Pandas-TS.</li>
+                        <li>Built a privacy-preserving on-device inference module with an ethical "kill-switch" to delete sensitive raw data after metadata extraction.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Python</span><span>Pandas-TS</span><span>TFT</span><span>MNE-Python</span><span>Signal Processing</span><span>On-Device AI</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: SpotOn - Virtual Ticket Booking System -->
+                <div class="project-card glass-panel reveal" data-category="web">
+                    <div class="project-header">
+                        <div class="project-top-meta">
+                            <span class="project-date">11/2025 – Present</span>
+                            <span class="status-indicator live">Full-Stack VR Platform</span>
+                        </div>
+                        <h3>SpotOn — Virtual Ticket Booking System</h3>
+                        <p class="project-tagline">Web-based VR Ticket Booking Architecture</p>
+                    </div>
+                    <p class="project-desc">
+                        Web-based VR ticket booking platform designed to provide users with an intuitive, seamless booking experience with modular, scalable backend operations.
+                    </p>
+                    <ul class="project-bullets">
+                        <li>Developed an interactive and responsive user interface using HTML, CSS, and JavaScript.</li>
+                        <li>Implemented server-side functionality and API handling using Node.js and Express.js.</li>
+                        <li>Integrated PostgreSQL with Sequelize ORM for structured data management and database operations.</li>
+                        <li>Designed a modular application architecture to improve maintainability, scalability, and streamlined booking workflows.</li>
+                        <li>Ensured smooth frontend–backend integration for consistent data flow and optimal ticket booking performance.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>HTML/CSS</span><span>JavaScript</span><span>Node.js</span><span>Express.js</span><span>PostgreSQL</span><span>Sequelize</span>
+                    </div>
+                </div>
+
+                <!-- Project 4: E-Commerce website — ILYRA -->
+                <div class="project-card glass-panel reveal" data-category="web">
+                    <div class="project-header">
+                        <div class="project-top-meta">
+                            <span class="project-date">03/2026 – Present</span>
+                            <span class="status-indicator live">Full-Stack App</span>
+                        </div>
+                        <h3>E-Commerce website — ILYRA</h3>
+                        <p class="project-tagline">Full-Stack Commerce with Role-Based Portals</p>
+                    </div>
+                    <p class="project-desc">
+                        Full-stack e-commerce web application featuring user authentication, product management, cart, checkout, payment gateways, and admin analytics dashboards.
+                    </p>
+                    <ul class="project-bullets">
+                        <li>Implemented secure JWT-based authentication and role-based admin access for users and administrators.</li>
+                        <li>Designed responsive frontend pages for product browsing, cart management, checkout, and payment workflows using HTML, CSS, and JavaScript.</li>
+                        <li>Built dynamic product detail pages with quantity selection, size options, and related products.</li>
+                        <li>Integrated Razorpay payment gateway for secure online payments and automated order placement.</li>
+                        <li>Developed admin dashboard with analytics visualizations using Chart.js to monitor revenue, sales, and products in real time.</li>
+                        <li>Integrated Qikink Print-on-Demand API for automated order fulfillment and external order processing.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Node.js</span><span>Express</span><span>MySQL</span><span>Sequelize</span><span>Razorpay</span><span>Chart.js</span>
+                    </div>
+                </div>
+
+                <!-- Project 5: AI Deepfake Verification Tool -->
+                <div class="project-card glass-panel reveal" data-category="ai">
+                    <div class="project-header">
+                        <div class="project-top-meta">
+                            <span class="project-date">Ongoing</span>
+                            <span class="status-indicator live">Computer Vision</span>
+                        </div>
+                        <h3>AI Deepfake Verification Tool</h3>
+                        <p class="project-tagline">Generative AI Media Authenticity Verification</p>
+                    </div>
+                    <p class="project-desc">
+                        AI-based deepfake detection system utilizing computer vision and Generative AI to identify manipulated imagery and video content in digital media.
+                    </p>
+                    <ul class="project-bullets">
+                        <li>Implemented computer vision pipelines and machine learning models in Python for media authenticity verification and synthetic content detection.</li>
+                        <li>Automated detection reports to fight digital misinformation and enhance media security.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>GenAI</span><span>Computer Vision</span><span>Python</span><span>Deep Learning</span><span>Media Security</span>
+                    </div>
+                </div>
+
+                <!-- Project 6: NLP Review Topic Classification Project -->
+                <div class="project-card glass-panel reveal" data-category="ai">
+                    <div class="project-header">
+                        <div class="project-top-meta">
+                            <span class="project-date">Completed</span>
+                            <span class="status-indicator live">NLP &amp; Text Mining</span>
+                        </div>
+                        <h3>NLP Review Topic Classification</h3>
+                        <p class="project-tagline">Multi-Aspect Review Analysis &amp; Modeling</p>
+                    </div>
+                    <p class="project-desc">
+                        Natural Language Processing classification pipeline to categorize multi-aspect restaurant reviews and extract underlying sentiment and topic drivers.
+                    </p>
+                    <ul class="project-bullets">
+                        <li>Performed comprehensive data cleaning, text preprocessing, and exploratory data analysis (EDA) on restaurant review text.</li>
+                        <li>Built a TF-IDF vectorizer + Logistic Regression model for multi-class classification and generated automated PDF analysis reports.</li>
+                        <li>Visualized insights using Matplotlib and benchmarked recommendations for BERT/LSTM transformer model implementations.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>NLP</span><span>Python</span><span>TF-IDF</span><span>Logistic Regression</span><span>Matplotlib</span><span>EDA</span>
+                    </div>
+                </div>
+
+                <!-- Project 7: Airline Passenger Analytics Dashboard -->
+                <div class="project-card glass-panel reveal" data-category="data">
+                    <div class="project-header">
+                        <div class="project-top-meta">
+                            <span class="project-date">07/2026</span>
+                            <span class="status-indicator live">Tableau Analytics</span>
+                        </div>
+                        <h3>Airline Passenger Analytics Dashboard</h3>
+                        <p class="project-tagline">98K+ Records Flight &amp; Passenger EDA</p>
+                    </div>
+                    <p class="project-desc">
+                        Analyzed and cleaned 98K+ airline passenger records using Google Sheets and Tableau to identify flight patterns, traveler demographics, and route trends.
+                    </p>
+                    <ul class="project-bullets">
+                        <li>Developed an interactive Tableau dashboard visualizing flight status, passenger demographics, nationality, airports, continents, and age groups.</li>
+                        <li>Created KPI cards, calculated fields, dynamic filters, and interactive visualizations for deep exploratory data analysis.</li>
+                        <li>Performed trend and comparative analysis using bar charts, pie charts, and monthly passenger patterns for actionable decision-making.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Tableau</span><span>Google Sheets</span><span>Data Cleaning</span><span>98K+ Records</span><span>KPI Analytics</span>
+                    </div>
+                </div>
+
+                <!-- Project 8: EV Vehicle Market Analysis Dashboard -->
+                <div class="project-card glass-panel reveal" data-category="data">
+                    <div class="project-header">
+                        <div class="project-top-meta">
+                            <span class="project-date">07/2026</span>
+                            <span class="status-indicator live">Market Intelligence</span>
+                        </div>
+                        <h3>EV Vehicle Market Analysis Dashboard</h3>
+                        <p class="project-tagline">2,000+ EV Records Segmentation &amp; Pricing</p>
+                    </div>
+                    <p class="project-desc">
+                        Comprehensive market intelligence Tableau dashboard analyzing 2,000+ electric vehicle models across sales, revenue, pricing tiers, and global market segments.
+                    </p>
+                    <ul class="project-bullets">
+                        <li>Built interactive dashboard with KPI cards for total units, revenue, average price, and customer ratings.</li>
+                        <li>Created visualizations for brand performance, yearly trends, country-wise sales, vehicle segments, body types, and Top 10 EV models.</li>
+                        <li>Implemented calculated fields and dynamic filters enabling multi-dimensional slicing by brand, year, and region.</li>
+                        <li>Identified key market takeaways including Tesla's market lead, premium segment dominance, and the U.S. as highest-selling territory.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Tableau</span><span>Market Analytics</span><span>Data Visualization</span><span>Electric Vehicles</span><span>KPIs</span>
+                    </div>
+                </div>
+
+                <!-- Project 9: Enterprise Sales Analytics Dashboard -->
+                <div class="project-card glass-panel reveal" data-category="data">
+                    <div class="project-header">
+                        <div class="project-top-meta">
+                            <span class="project-date">10/2026</span>
+                            <span class="status-indicator live">Business Intelligence</span>
+                        </div>
+                        <h3>Enterprise Sales Analytics Dashboard</h3>
+                        <p class="project-tagline">Tableau Public Superstore Performance</p>
+                    </div>
+                    <p class="project-desc">
+                        Interactive Tableau dashboard analyzing enterprise sales performance, profitability margins, regional trends, and product-level profitability using the Sample Superstore dataset.
+                    </p>
+                    <ul class="project-bullets">
+                        <li>Created KPI visualizations for total sales, total profit, and profit margin along with monthly sales trend comparisons.</li>
+                        <li>Identified high-performing geographical territories, profitable product categories, and loss-making SKUs to support data-driven strategy.</li>
+                        <li>Delivered drill-down capabilities for executives to inspect regional managers and shipping modes.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Tableau Public</span><span>Business Intelligence</span><span>Sales Analytics</span><span>Profit Margins</span>
+                    </div>
+                </div>
+
+                <!-- Project 10: DBMS E-Commerce Stock Management -->
+                <div class="project-card glass-panel reveal" data-category="web">
+                    <div class="project-header">
+                        <div class="project-top-meta">
+                            <span class="project-date">01/2026 – 04/2026</span>
+                            <span class="status-indicator live">Database System</span>
+                        </div>
+                        <h3>E-Commerce Stock Management DBMS</h3>
+                        <p class="project-tagline">Relational Inventory &amp; Order Pipeline</p>
+                    </div>
+                    <p class="project-desc">
+                        Robust database management system to manage inventory, product catalogs, real-time stock availability, and automated reorder tracking.
+                    </p>
+                    <ul class="project-bullets">
+                        <li>Designed relational schema for tracking product inventory, stock levels, supplier details, and order histories.</li>
+                        <li>Developed features including product management, low-stock threshold alerts, and automated stock reconciliations.</li>
+                        <li>Optimized SQL queries for fast lookup and dependable transaction handling during peak inventory updates.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>DBMS</span><span>SQL</span><span>PostgreSQL</span><span>Inventory Management</span><span>Real-Time Updates</span>
+                    </div>
+                </div>
+
+                <!-- Project 11: Traffic Flow Analysis -->
+                <div class="project-card glass-panel reveal" data-category="data">
+                    <div class="project-header">
+                        <div class="project-top-meta">
+                            <span class="project-date">Ongoing</span>
+                            <span class="status-indicator live">EDA &amp; Smart Cities</span>
+                        </div>
+                        <h3>Traffic Flow Analysis</h3>
+                        <p class="project-tagline">Urban Congestion &amp; Peak Hour Mobility Patterns</p>
+                    </div>
+                    <p class="project-desc">
+                        Analyzed urban traffic datasets to identify road congestion patterns, peak hours, and vehicle distributions for smart city route planning.
+                    </p>
+                    <ul class="project-bullets">
+                        <li>Identified peak hour bottlenecks and congestion times using Pandas and statistical exploratory analysis.</li>
+                        <li>Conducted comparative analysis across different days and locations to uncover mobility trends.</li>
+                        <li>Formulated actionable suggestions to optimize traffic signals and reduce commuter delays in high-density corridors.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Data Analytics</span><span>Pandas</span><span>Python</span><span>Data Visualization</span><span>Smart City</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="section-header reveal">
+                <div class="section-label">Let's Connect</div>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            
+            <div class="glass-card reveal" id="contactCard">
+                <div class="glass-shine"></div>
+                <div class="card-grid">
+                    <!-- Left Section: Details -->
+                    <div class="info-section">
+                        <div class="info-top-row">
+                            <span class="badge pulse-badge">
+                                <span class="pulse-dot"></span>
+                                Available for Work
+                            </span>
+                            <button type="button" class="inbox-btn" id="openInboxBtn" aria-label="Open Messages Inbox">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                <span>Messages</span>
+                                <span class="inbox-badge" id="inboxCount">0</span>
+                            </button>
+                        </div>
+
+                        <div class="info-intro">
+                            <h1 class="title"><span class="highlight">Cheeranjeevan.K</span></h1>
+                            <p class="role-tag">Data Analyst Intern</p>
+                            <p class="description">
+                                Have an internship opportunity, project collaboration, or just want to chat? Drop me a message and I'll get back to you as soon as possible.
+                            </p>
+                        </div>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="icon-wrapper">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </div>
+                                <div class="details">
+                                    <span class="label">Email me</span>
+                                    <a href="mailto:cheeranjeevank@gmail.com" class="value">cheeranjeevank@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="icon-wrapper">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                </div>
+                                <div class="details">
+                                    <span class="label">Phone</span>
+                                    <a href="tel:+916379218990" class="value">+91 6379218990</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="icon-wrapper">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                </div>
+                                <div class="details">
+                                    <span class="label">Location</span>
+                                    <span class="value">Coimbatore, India</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="socials-container">
+                            <a href="https://github.com/Cheeranjeevank" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                            <a href="https://linkedin.com/in/cheeranjeevank" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Section: Form -->
+                    <div class="form-section">
+                        <form id="contactForm" novalidate>
+                            <div class="input-group">
+                                <input type="text" id="name" name="name" required placeholder=" " autocomplete="off">
+                                <label for="name">Your Name</label>
+                                <span class="input-focus-line"></span>
+                                <div class="error-msg" id="nameError">Please enter your name</div>
+                            </div>
+
+                            <div class="input-group">
+                                <input type="email" id="email" name="email" required placeholder=" " autocomplete="off">
+                                <label for="email">Email Address</label>
+                                <span class="input-focus-line"></span>
+                                <div class="error-msg" id="emailError">Please enter a valid email address</div>
+                            </div>
+
+                            <div class="input-group">
+                                <input type="tel" id="phone" name="phone" required placeholder=" " autocomplete="off">
+                                <label for="phone">Phone Number</label>
+                                <span class="input-focus-line"></span>
+                                <div class="error-msg" id="phoneError">Please enter your phone number</div>
+                            </div>
+
+                            <div class="input-group">
+                                <input type="text" id="occupation" name="occupation" required placeholder=" " autocomplete="off">
+                                <label for="occupation">Occupation</label>
+                                <span class="input-focus-line"></span>
+                                <div class="error-msg" id="occupationError">Please enter your occupation</div>
+                            </div>
+
+                            <div class="input-group">
+                                <textarea id="message" name="message" required placeholder=" " rows="4"></textarea>
+                                <label for="message">Your Message</label>
+                                <span class="input-focus-line"></span>
+                                <div class="error-msg" id="messageError">Please write a message</div>
+                            </div>
+
+                            <button type="submit" class="submit-btn" id="submitBtn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-glow"></span>
+                                <div class="btn-loader">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><circle cx="12" cy="12" r="10" stroke-opacity="0.25"></circle><path d="M12 2a10 10 0 0 1 10 10"></path></svg>
+                                </div>
+                            </button>
+                        </form>
+
+                        <!-- Success State Overlay -->
+                        <div class="success-state" id="successState">
+                            <div class="success-icon-wrapper">
+                                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                            </div>
+                            <h2>Message Sent!</h2>
+                            <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
+                            <button type="button" class="back-btn" id="backBtn">Send another message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Cheeranjeevan K. All rights reserved.</p>
+            <p class="footer-design">Designed &amp; Built with HTML, Vanilla CSS, and JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- Inbox Modal Overlay -->
+    <div class="inbox-modal" id="inboxModal">
+        <div class="inbox-card">
+            <div class="inbox-header">
+                <div class="inbox-title-wrap">
+                    <h2>Message Inbox</h2>
+                    <span class="inbox-count-tag" id="inboxCountTag">0 Messages</span>
+                </div>
+                <div class="inbox-actions">
+                    <button type="button" class="clear-btn" id="clearInboxBtn">Clear All</button>
+                    <button type="button" class="close-inbox-btn" id="closeInboxBtn" aria-label="Close Inbox">&times;</button>
+                </div>
+            </div>
+            <div class="inbox-body" id="inboxBody">
+                <div class="message-list" id="messageList">
+                    <!-- Dynamic message cards go here -->
+                </div>
+            </div>
+        </div>
     </div>
-  </main>
 
-  <!-- About Me Section in normal scroll flow -->
-  <section id="about-section" class="about-section-normal">
-    <div class="about-section-header">
-      <span class="intro-tag">My Story</span>
-      <h2 class="section-title">About Me</h2>
-    </div>
-    <div class="about-timeline-container">
-      
-      <!-- Box 1: Right Aligned (Who I Am) -->
-      <div class="about-row align-right">
-        <div class="about-card-normal glass-panel">
-          <div class="about-card-header">
-            <span class="about-step-num">01</span>
-            <h3 class="about-card-title">Who I Am</h3>
-          </div>
-          <p class="about-para">
-            Hi, I’m <strong>Cheeranjeevan K</strong>, an undergraduate student pursuing a <strong>B.Tech in Artificial Intelligence and Data Science</strong>. I am passionate about leveraging data and AI to solve real-world problems and create impactful, user-focused solutions.
-          </p>
-        </div>
-      </div>
+    <!-- Notification Toast -->
+    <div class="toast" id="toast"></div>
 
-      <!-- Box 2: Left Aligned (My Domain) -->
-      <div class="about-row align-left">
-        <div class="about-card-normal glass-panel">
-          <div class="about-card-header">
-            <span class="about-step-num">02</span>
-            <h3 class="about-card-title">My Domain</h3>
-          </div>
-          <p class="about-para">
-            My interests lie in <strong>Data Analytics, Machine Learning, Artificial Intelligence, Business Intelligence, and Full-Stack Development</strong>. I enjoy transforming raw data into meaningful insights through tools like Python, SQL, Excel, Power BI, Tableau, and Machine Learning, while also building modern web applications with intuitive user experiences.
-          </p>
-        </div>
-      </div>
-
-      <!-- Box 3: Right Aligned (Hands-on Projects) -->
-      <div class="about-row align-right">
-        <div class="about-card-normal glass-panel">
-          <div class="about-card-header">
-            <span class="about-step-num">03</span>
-            <h3 class="about-card-title">Projects</h3>
-          </div>
-          <p class="about-para">
-            Throughout my academic journey, I have built several projects across data analytics, machine learning, computer vision, and full-stack development:
-          </p>
-          <ul class="about-list">
-            <li><strong>SpotOn</strong> — VR &amp; Ticket Booking Applications</li>
-            <li><strong>NLP Review Classification</strong> — Text Classification &amp; NLP</li>
-            <li><strong>AI Deepfake Detection Tool</strong> — Generative AI &amp; Computer Vision</li>
-            <li><strong>The 'Sub-Threshold' Sentinel</strong> — Time-Series &amp; Crisis Prediction</li>
-            <li><strong>Traffic Flow Analysis</strong> — Smart City Analytics &amp; Congestion Modeling</li>
-            <li><strong>E-commerce Stock Management</strong> — Database Management Systems</li>
-            <li><strong>ILYRA E-Commerce Website</strong> — Fullstack Development &amp; Payment Gateway (<a href="https://ilyraa.netlify.app/user/index.html" target="_blank" rel="noopener noreferrer" class="about-inline-link">Successfully Deployed &amp; Live ↗</a>)</li>
-            <li><strong>Tableau Business Intelligence</strong> — Data Analytics &amp; KPI Dashboards</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Box 4: Left Aligned (Credentials & Tech Stack) -->
-      <div class="about-row align-left">
-        <div class="about-card-normal glass-panel">
-          <div class="about-card-header">
-            <span class="about-step-num">04</span>
-            <h3 class="about-card-title">Credentials &amp; Stack</h3>
-          </div>
-          <p class="about-para">
-            I have earned the Google Data Analytics Professional Certificate, completed Generative AI training through Infosys Springboard, and gained industry experience through internships in Data Analytics, AI/ML, and Web Development.
-          </p>
-          <div class="skills-chips">
-            <span class="skill-chip">Python</span>
-            <span class="skill-chip">SQL</span>
-            <span class="skill-chip">Power BI</span>
-            <span class="skill-chip">Tableau</span>
-            <span class="skill-chip">Machine Learning</span>
-            <span class="skill-chip">Generative AI</span>
-            <span class="skill-chip">PostgreSQL</span>
-            <span class="skill-chip">Excel</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Overlay Modal Panels (Connected to Side Dashboard) -->
-  
-  <!-- Certifications Modal -->
-  <div class="modal-overlay" id="modal-certifications" role="dialog" aria-modal="true" aria-labelledby="cert-title">
-    <div class="modal-content glass-panel">
-      <button class="modal-close" aria-label="Close Certifications Modal">&times;</button>
-      <h2 id="cert-title" class="modal-title">My Certifications</h2>
-      <div class="certifications-list">
-        
-        <div class="cert-card">
-          <div class="cert-glow"></div>
-          <div class="cert-header">
-            <span class="cert-year">2026</span>
-            <span class="cert-authority">Google Career Certificates</span>
-          </div>
-          <h3 class="cert-name">Google Data Analytics Professional Certificate</h3>
-          <p class="cert-desc">Mastered data cleaning, analysis, visualization, SQL, spreadsheets, R programming, and data-driven decision-making through nine comprehensive courses.</p>
-        </div>
-
-        <div class="cert-card">
-          <div class="cert-glow"></div>
-          <div class="cert-header">
-            <span class="cert-year">2025</span>
-            <span class="cert-authority">Infosys Springboard</span>
-          </div>
-          <h3 class="cert-name">Generative AI Foundations</h3>
-          <p class="cert-desc">Deep understanding of LLM parameters, prompt engineering, generative paradigms, and foundational model integrations.</p>
-        </div>
-
-        <div class="cert-card">
-          <div class="cert-glow"></div>
-          <div class="cert-header">
-            <span class="cert-year">2025</span>
-            <span class="cert-authority">NPTEL</span>
-          </div>
-          <h3 class="cert-name">Responsible and Safe AI</h3>
-          <p class="cert-desc">Explored ethical considerations, fairness metrics, bias mitigation, privacy regulations, and safety standards in AI deployments.</p>
-        </div>
-
-        <div class="cert-card">
-          <div class="cert-glow"></div>
-          <div class="cert-header">
-            <span class="cert-year">2024</span>
-            <span class="cert-authority">Great Learning</span>
-          </div>
-          <h3 class="cert-name">Data Science Foundations</h3>
-          <p class="cert-desc">Covered mathematical foundations, data exploratory principles, and fundamental predictive algorithms.</p>
-        </div>
-
-        <div class="cert-card">
-          <div class="cert-glow"></div>
-          <div class="cert-header">
-            <span class="cert-year">2024</span>
-            <span class="cert-authority">Great Learning</span>
-          </div>
-          <h3 class="cert-name">Basics of Data Analytics</h3>
-          <p class="cert-desc">Fundamental concepts of statistical distributions, exploratory data analysis, and visual storytelling.</p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- Projects Modal -->
-  <div class="modal-overlay" id="modal-projects" role="dialog" aria-modal="true" aria-labelledby="proj-title">
-    <div class="modal-content glass-panel modal-lg">
-      <button class="modal-close" aria-label="Close Projects Modal">&times;</button>
-      <h2 id="proj-title" class="modal-title">My Projects</h2>
-      <div class="projects-grid">
-
-        <!-- Project 1: SpotOn -->
-        <div class="project-card">
-          <div class="project-header">
-            <span class="project-badge highlight">Active</span>
-            <span class="project-date">Ongoing</span>
-          </div>
-          <h3 class="project-title">SpotOn - Virtual Ticket Booking</h3>
-          <h4 class="project-subtitle">Frontend &amp; Backend Booking Platforms</h4>
-          <p class="project-desc">Developing a complete online ticket booking platform. Implemented responsive frontend designs and robust database APIs.</p>
-          <div class="project-tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">Node.js</span>
-            <span class="tag">Express</span>
-            <span class="tag">PostgreSQL</span>
-          </div>
-        </div>
-
-        <!-- Project 2: NLP Classification -->
-        <div class="project-card">
-          <div class="project-header">
-            <span class="project-badge">Completed</span>
-            <span class="project-date">2025</span>
-          </div>
-          <h3 class="project-title">NLP Review Classification</h3>
-          <h4 class="project-subtitle">Restaurant Review Text Classification</h4>
-          <p class="project-desc">Performed data cleaning, preprocessing, and exploratory data analysis (EDA) on restaurant review text. Built a TF-IDF + Logistic Regression model for multi-class classification, generated PDF reports, and visualized performance insights.</p>
-          <div class="project-tags">
-            <span class="tag">NLP</span>
-            <span class="tag">Logistic Regression</span>
-            <span class="tag">TF-IDF</span>
-            <span class="tag">Matplotlib</span>
-            <span class="tag">EDA</span>
-          </div>
-        </div>
-
-        <!-- Project 3: AI Deepfake Detection -->
-        <div class="project-card">
-          <div class="project-header">
-            <span class="project-badge highlight">Active</span>
-            <span class="project-date">Ongoing</span>
-          </div>
-          <h3 class="project-title">AI Deepfake Detection Tool</h3>
-          <h4 class="project-subtitle">GenAI Content Verification</h4>
-          <p class="project-desc">Developed an AI-based deepfake detection system using Generative AI and computer vision techniques to identify manipulated media. Implemented ML models in Python for authenticity verification and synthetic content detection.</p>
-          <div class="project-tags">
-            <span class="tag">GenAI</span>
-            <span class="tag">Computer Vision</span>
-            <span class="tag">Python</span>
-            <span class="tag">Deepfake Detection</span>
-            <span class="tag">ML</span>
-          </div>
-        </div>
-
-        <!-- Project 4: The 'Sub-Threshold' Sentinel -->
-        <div class="project-card">
-          <div class="project-header">
-            <span class="project-badge highlight">Active</span>
-            <span class="project-date">Ongoing</span>
-          </div>
-          <h3 class="project-title">The 'Sub-Threshold' Sentinel</h3>
-          <h4 class="project-subtitle">Passive Behavioral Entropy &amp; Crisis Prediction</h4>
-          <p class="project-desc">Designed a behavioral monitoring system to detect early signs of mental health relapse by analyzing digital biomarkers like keystroke dynamics. Developed self-supervised contrastive learning and time-series analysis models (Temporal Fusion Transformer, MNE-Python, Pandas-TS) with on-device privacy controls.</p>
-          <div class="project-tags">
-            <span class="tag">Contrastive Learning</span>
-            <span class="tag">Time-Series</span>
-            <span class="tag">Signal Processing</span>
-            <span class="tag">Pandas-TS</span>
-            <span class="tag">Mental Health</span>
-          </div>
-        </div>
-
-        <!-- Project 5: Traffic Flow Analysis -->
-        <div class="project-card">
-          <div class="project-header">
-            <span class="project-badge">Completed</span>
-            <span class="project-date">2025</span>
-          </div>
-          <h3 class="project-title">Traffic Flow Analysis</h3>
-          <h4 class="project-subtitle">Congestion &amp; Smart City Analytics</h4>
-          <p class="project-desc">Analyzed traffic data to identify congestion patterns, peak hours, and vehicle distribution using data analytics and visualizations. Delivered data-driven insights for smart city planning and peak detection.</p>
-          <div class="project-tags">
-            <span class="tag">Data Analytics</span>
-            <span class="tag">Data Processing</span>
-            <span class="tag">Smart Cities</span>
-            <span class="tag">Traffic Analysis</span>
-          </div>
-        </div>
-
-        <!-- Project 6: E-commerce Stock Management -->
-        <div class="project-card">
-          <div class="project-header">
-            <span class="project-badge">Completed</span>
-            <span class="project-date">01/2026 - 04/2026</span>
-          </div>
-          <h3 class="project-title">E-commerce Stock Management</h3>
-          <h4 class="project-subtitle">Database Management System</h4>
-          <p class="project-desc">Built an E-Commerce Stock Management System to manage inventory, product details, stock availability, and order tracking with database integration and real-time alerts. Developed product management, low-stock alerts, and tracking panels.</p>
-          <div class="project-tags">
-            <span class="tag">DBMS</span>
-            <span class="tag">Inventory Tracking</span>
-            <span class="tag">Web Tech</span>
-            <span class="tag">Database Integration</span>
-          </div>
-        </div>
-
-        <!-- Project 7: E-commerce Website, ILYRA -->
-        <div class="project-card">
-          <div class="project-header">
-            <span class="project-badge highlight-green">Live</span>
-            <span class="project-date">03/2026 - 06/2026</span>
-          </div>
-          <h3 class="project-title">E-commerce Website, ILYRA</h3>
-          <h4 class="project-subtitle">Fullstack E-Commerce &amp; Payment Gateway</h4>
-          <p class="project-desc">Successfully deployed and live. Developed a full-stack e-commerce web application with user auth, product management, cart, checkout, and order tracking. Integrated Razorpay payment gateway, admin dashboards with Chart.js analytics, and Qikink Print-on-Demand APIs.</p>
-          <a href="https://ilyraa.netlify.app/user/index.html" target="_blank" rel="noopener noreferrer" class="project-live-link">
-            <span>View Deployed Project</span>
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-              <polyline points="15 3 21 3 21 9"/>
-              <line x1="10" y1="14" x2="21" y2="3"/>
-            </svg>
-          </a>
-          <div class="project-tags">
-            <span class="tag">Node.js</span>
-            <span class="tag">Express.js</span>
-            <span class="tag">Sequelize</span>
-            <span class="tag">MySQL</span>
-            <span class="tag">JWT</span>
-            <span class="tag">Chart.js</span>
-            <span class="tag">Razorpay</span>
-            <span class="tag">Qikink API</span>
-          </div>
-        </div>
-
-        <!-- Project 8: Tableau Data Analytics -->
-        <div class="project-card">
-          <div class="project-header">
-            <span class="project-badge">Completed</span>
-            <span class="project-date">04/2026 - 05/2026</span>
-          </div>
-          <h3 class="project-title">Data Analytics &amp; Dashboards</h3>
-          <h4 class="project-subtitle">Interactive Tableau Business Intelligence</h4>
-          <p class="project-desc">Developed comprehensive and interactive Tableau dashboards for sales, HR, healthcare, and customer analytics, enabling KPI monitoring and trend forecasting. Performed end-to-end data preparation (cleaning, transformation, validation) using Excel, SQL, and BigQuery.</p>
-          <div class="project-tags">
-            <span class="tag">Tableau</span>
-            <span class="tag">Excel</span>
-            <span class="tag">SQL</span>
-            <span class="tag">BigQuery</span>
-            <span class="tag">EDA</span>
-            <span class="tag">KPI Dashboards</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Links Modal -->
-  <div class="modal-overlay" id="modal-links" role="dialog" aria-modal="true" aria-labelledby="links-title">
-    <div class="modal-content glass-panel">
-      <button class="modal-close" aria-label="Close Links Modal">&times;</button>
-      <h2 id="links-title" class="modal-title">Connect With Me</h2>
-      <div class="links-container">
-        
-        <a href="https://github.com/Cheeranjeevank" target="_blank" rel="noopener noreferrer" class="link-card">
-          <div class="link-icon">
-            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-            </svg>
-          </div>
-          <div class="link-details">
-            <span class="link-name">GitHub</span>
-            <span class="link-username">github.com/Cheeranjeevank</span>
-          </div>
-          <span class="link-arrow">&rarr;</span>
-        </a>
-
-        <a href="https://linkedin.com/in/cheeranjeevank" target="_blank" rel="noopener noreferrer" class="link-card">
-          <div class="link-icon">
-            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-              <rect x="2" y="9" width="4" height="12"/>
-              <circle cx="4" cy="4" r="2"/>
-            </svg>
-          </div>
-          <div class="link-details">
-            <span class="link-name">LinkedIn</span>
-            <span class="link-username">cheeranjeevank</span>
-          </div>
-          <span class="link-arrow">&rarr;</span>
-        </a>
-
-        <a href="mailto:cheeranjeevank@gmail.com" class="link-card">
-          <div class="link-icon">
-            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-              <polyline points="22,6 12,13 2,6"/>
-            </svg>
-          </div>
-          <div class="link-details">
-            <span class="link-name">Email</span>
-            <span class="link-username">cheeranjeevank@gmail.com</span>
-          </div>
-          <span class="link-arrow">&rarr;</span>
-        </a>
-
-        <a href="tel:+916379218990" class="link-card">
-          <div class="link-icon">
-            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-            </svg>
-          </div>
-          <div class="link-details">
-            <span class="link-name">Phone</span>
-            <span class="link-username">+91 6379218990</span>
-          </div>
-          <span class="link-arrow">&rarr;</span>
-        </a>
-
-        <div class="link-card no-click">
-          <div class="link-icon">
-            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-              <circle cx="12" cy="10" r="3"/>
-            </svg>
-          </div>
-          <div class="link-details">
-            <span class="link-name">Location</span>
-            <span class="link-username">Coimbatore, India</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <script src="script.js?v=1.2"></script>
+    <script src="script.js"></script>
 </body>
 </html>
