@@ -89,7 +89,7 @@
                     </div>
                     <div class="stat-divider"></div>
                     <div class="stat-item">
-                        <span class="stat-number">11</span>
+                        <span class="stat-number">13</span>
                         <span class="stat-label">Featured Projects</span>
                     </div>
                     <div class="stat-divider"></div>
@@ -202,7 +202,7 @@
                     <h3>Programming</h3>
                     <p>Core object-oriented and data processing languages for algorithmic problem-solving and software engineering.</p>
                     <div class="skill-tags">
-                        <span>Python</span><span>Java</span><span>C++</span>
+                        <span>Python</span><span>Java</span><span>C++</span><span>TypeScript</span>
                     </div>
                 </div>
 
@@ -212,7 +212,7 @@
                     <h3>Machine Learning &amp; AI</h3>
                     <p>Natural Language Processing (NLP), Generative AI foundations, Computer Vision, Swarm AI, on-device model tuning.</p>
                     <div class="skill-tags">
-                        <span>NLP</span><span>Generative AI</span><span>Computer Vision</span><span>TensorFlow Lite</span><span>ML Kit</span>
+                        <span>NLP</span><span>Generative AI</span><span>Google Gemini API</span><span>Computer Vision</span><span>Scikit-learn</span><span>TensorFlow Lite</span>
                     </div>
                 </div>
 
@@ -222,7 +222,7 @@
                     <h3>Data Analytics</h3>
                     <p>Interactive dashboard design, predictive forecasting, Exploratory Data Analysis (EDA), KPI monitoring, and storytelling.</p>
                     <div class="skill-tags">
-                        <span>Power BI</span><span>Tableau</span><span>BigQuery</span><span>Google Sheets</span><span>MS Excel</span><span>R</span>
+                        <span>Power BI</span><span>Tableau</span><span>BigQuery</span><span>Pandas</span><span>NumPy</span><span>Google Sheets</span><span>MS Excel</span><span>R</span>
                     </div>
                 </div>
 
@@ -242,7 +242,7 @@
                     <h3>Web Development</h3>
                     <p>Full-stack custom applications, RESTful API design, interactive UI, content management systems, and e-commerce.</p>
                     <div class="skill-tags">
-                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>WordPress</span><span>Node.js</span><span>Express.js</span>
+                        <span>React 18</span><span>FastAPI</span><span>Tailwind CSS</span><span>Node.js</span><span>Express.js</span><span>HTML/CSS</span><span>JavaScript</span><span>WordPress</span>
                     </div>
                 </div>
             </div>
@@ -408,20 +408,45 @@
                 <div class="section-label">What I've Built</div>
                 <h2 class="section-title">Featured Projects</h2>
                 <p class="section-subtitle">
-                    Explore 11 projects spanning Swarm Intelligence, time-series forecasting, full-stack applications, NLP, and interactive Tableau business intelligence dashboards.
+                    Explore 13 projects spanning Generative AI observability, Swarm Intelligence, time-series forecasting, full-stack applications, NLP, and interactive Tableau business intelligence dashboards.
                 </p>
             </div>
 
             <!-- Project Category Filter Pills -->
             <div class="project-filters reveal">
-                <button type="button" class="filter-btn active" data-filter="all">All (11)</button>
-                <button type="button" class="filter-btn" data-filter="ai">AI &amp; Machine Learning (4)</button>
-                <button type="button" class="filter-btn" data-filter="data">Data Analytics &amp; BI (4)</button>
+                <button type="button" class="filter-btn active" data-filter="all">All (13)</button>
+                <button type="button" class="filter-btn" data-filter="ai">AI &amp; Machine Learning (5)</button>
+                <button type="button" class="filter-btn" data-filter="data">Data Analytics &amp; BI (5)</button>
                 <button type="button" class="filter-btn" data-filter="web">Web &amp; Full-Stack (3)</button>
             </div>
             
             <div class="projects-grid" id="projectsGrid">
-                <!-- Project 1: Competitor War Room AI -->
+                <!-- Project 1: Data Doctor -->
+                <div class="project-card glass-panel reveal" data-category="ai">
+                    <div class="project-header">
+                        <div class="project-top-meta">
+                            <span class="project-date">Ongoing</span>
+                            <span class="status-indicator live">Full-Stack GenAI</span>
+                        </div>
+                        <h3>Data Doctor</h3>
+                        <p class="project-tagline">Full-Stack &amp; Generative AI Data Reliability Platform</p>
+                    </div>
+                    <p class="project-desc">
+                        End-to-end AI-assisted data observability platform that ingests multi-format datasets, executes asynchronous profiling, detects statistical anomalies, and diagnoses pipeline failures with Gemini agents.
+                    </p>
+                    <ul class="project-bullets">
+                        <li>Architected data observability platform ingesting CSV, JSON, XLSX datasets with asynchronous profiling via FastAPI BackgroundTasks and column-level distribution statistics.</li>
+                        <li>Engineered a multi-algorithm statistical anomaly detection engine combining Z-Score, IQR Fencing, and missingness thresholds with dynamic severity scoring to identify data drift.</li>
+                        <li>Integrated an autonomous Gemini 3.6 Flash agent using dynamic schema/profile context injection for natural-language diagnostics, SQL/Pandas code generation, and human-in-the-loop escalation.</li>
+                        <li>Built a fault-tolerant LLM invocation pipeline featuring exponential backoff with jitter and a multi-model fallback chain to mitigate 429/503 API throttling during high-concurrency bursts.</li>
+                        <li>Developed a responsive React/TypeScript dashboard featuring an interactive React Flow DAG to map pipeline blast radius, a live failure-injection simulator, and Recharts-powered revenue impact estimation.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Python</span><span>FastAPI</span><span>React 18</span><span>TypeScript</span><span>Google Gemini API</span><span>Scikit-learn</span><span>React Flow</span><span>Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: Competitor War Room AI -->
                 <div class="project-card glass-panel reveal" data-category="ai">
                     <div class="project-header">
                         <div class="project-top-meta">
@@ -566,7 +591,31 @@
                     </div>
                 </div>
 
-                <!-- Project 7: Airline Passenger Analytics Dashboard -->
+                <!-- Project 7: Data Analytics & Performance Monitoring Systems -->
+                <div class="project-card glass-panel reveal" data-category="data">
+                    <div class="project-header">
+                        <div class="project-top-meta">
+                            <span class="project-date">04/2026 – Present</span>
+                            <span class="status-indicator live">BI &amp; Monitoring</span>
+                        </div>
+                        <h3>Data Analytics &amp; Performance Monitoring Systems</h3>
+                        <p class="project-tagline">Enterprise Data Preparation &amp; Predictive Dashboards</p>
+                    </div>
+                    <p class="project-desc">
+                        End-to-end data preparation, cleaning, integration, and real-time analytical dashboards delivering forecasting and predictive analytics for strategic business planning and growth.
+                    </p>
+                    <ul class="project-bullets">
+                        <li>Performed end-to-end data preparation, including data cleaning, transformation, validation, and exploratory data analysis (EDA) using Tableau, Microsoft Excel, SQL, and BigQuery.</li>
+                        <li>Designed dynamic and user-friendly dashboards featuring filters, parameters, calculated fields, drill-down capabilities, and interactive visualizations.</li>
+                        <li>Built real-time analytical dashboards and performance monitoring systems with forecasting and predictive analytics features, supporting strategic decision-making.</li>
+                        <li>Generated detailed reports and visualizations to communicate analytical findings effectively, while collaborating with team members on business intelligence initiatives.</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span>Tableau</span><span>BigQuery</span><span>SQL</span><span>MS Excel</span><span>EDA</span><span>Predictive Analytics</span>
+                    </div>
+                </div>
+
+                <!-- Project 8: Airline Passenger Analytics Dashboard -->
                 <div class="project-card glass-panel reveal" data-category="data">
                     <div class="project-header">
                         <div class="project-top-meta">

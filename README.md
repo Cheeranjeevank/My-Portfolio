@@ -9,8 +9,8 @@ The portfolio features a modern obsidian dark theme with ambient violet/blue mes
 ## 🌟 Key Highlights
 
 1. **Modern Dark Obsidian & Violet/Blue Glassmorphism**: High-fidelity frosted glass cards (`backdrop-filter: blur(25px)`), radiant accent borders, dynamic background glow blobs, and interactive mouse-tracking lighting.
-2. **Recruiter Metric Ticker**: Instant snapshot displaying **8.5 CGPA**, **2+ Internships**, **11 Featured Projects**, and **6 Certifications**.
-3. **Interactive Project Catalog & Filtering**: Seamless category filters across 11 projects spanning **AI & Machine Learning**, **Data Analytics & BI**, and **Web & Full-Stack Development**.
+2. **Recruiter Metric Ticker**: Instant snapshot displaying **8.5 CGPA**, **2+ Internships**, **13 Featured Projects**, and **6 Certifications**.
+3. **Interactive Project Catalog & Filtering**: Seamless category filters across 13 projects spanning **AI & Machine Learning**, **Data Analytics & BI**, and **Web & Full-Stack Development**.
 4. **Campus Leadership & Responsibility**: Showcases executive leadership as **Joint Secretary, KPRIET ACM Student Chapter** and **Marketing Chair**.
 5. **Interactive Message Inbox**: Built-in contact form with live validation, realistic submission state, and a client-side `localStorage` message inbox with badge counters and toast notifications.
 6. **Mobile-First Responsiveness**: Animated hamburger drawer navigation, touch-optimized layouts, and smooth scroll reveal animations.
@@ -26,15 +26,17 @@ The portfolio features a modern obsidian dark theme with ambient violet/blue mes
 
 ---
 
-## 📁 Featured Projects Catalog (11 Projects)
+## 📁 Featured Projects Catalog (13 Projects)
 
 ### 🧠 AI & Machine Learning
+* **Data Doctor — Full-Stack & Generative AI Data Reliability Platform**: End-to-end data observability platform with asynchronous profiling via FastAPI BackgroundTasks, statistical anomaly detection (Z-Score, IQR Fencing), and autonomous Gemini 3.6 Flash agent diagnostics with React Flow DAG.
 * **Competitor War Room AI — Autonomous Swarm Intelligence**: 4 interconnected AI agents acting as an automated COO with on-device TensorFlow Lite sentiment classification, Google ML Kit OCR, and Dart Frog agent orchestration.
 * **The 'Sub-Threshold' Sentinel**: Passive behavioral entropy & mental health crisis prediction system using Temporal Fusion Transformers (TFT), MNE-Python, and self-supervised contrastive learning.
 * **AI Deepfake Verification Tool**: Computer vision and Generative AI pipeline in Python for media authenticity verification and deepfake detection.
 * **NLP Review Topic Classification**: Multi-aspect restaurant review text mining and multi-class classification using TF-IDF, Logistic Regression, and Matplotlib.
 
 ### 📊 Data Analytics & Business Intelligence
+* **Data Analytics & Performance Monitoring Systems**: Enterprise data preparation (SQL, BigQuery, Excel, Tableau) and real-time analytical dashboards delivering forecasting and predictive analytics for business growth.
 * **Airline Passenger Analytics Dashboard**: Tableau & Google Sheets interactive dashboard analyzing 98K+ passenger records with KPI cards and demographic exploration.
 * **EV Vehicle Market Analysis Dashboard**: Comprehensive Tableau market analysis evaluating 2,000+ electric vehicle models across pricing, revenue, and global market segments.
 * **Enterprise Sales Analytics Dashboard**: Tableau Public dashboard analyzing enterprise sales performance, profitability margins, and product profitability on the Sample Superstore dataset.
